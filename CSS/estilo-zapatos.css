@@ -1,0 +1,411 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+
+body {
+    background: white;
+}
+
+.header {
+    display: grid;
+    grid-template-rows: 5fr 5fr 5fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+
+    background-color: red;
+    background: red;
+
+    font-family: sans-serif;
+    row-gap: 10px;
+}
+
+.logo {
+    grid-row-start: 2;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 1;
+    text-align: center;
+    color: white;
+
+}
+
+.iconos-compra-cuenta {
+    background-color: red;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    grid-column-start: 5;
+    grid-column-end: 5;
+    align-self: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: end;
+
+}
+
+
+.barra-de-busqueda {
+    grid-row-start: 2;
+    grid-row-end: 2;
+    grid-column-start: 5;
+    grid-column-end: 6;
+    align-self: center;
+
+
+}
+
+.menu {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    list-style-type: none;
+    grid-row-start: 3;
+    grid-row-end: 3;
+    grid-column-start: 2;
+    grid-column-end: 6;
+    list-style-type: none;
+
+    column-gap: 100px;
+}
+
+.menu li {
+    float: left;
+    display: flex;
+    align-items: center;
+
+}
+
+.menu li a {
+    float: right;
+    display: block;
+
+    color: #f2f2f2;
+
+    padding: 14px 20px;
+    text-decoration: none;
+    font-size: 30px;
+}
+
+.menu li a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.menu a.active {
+    color: black;
+}
+
+.sidebar {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    margin-left: 50px;
+    row-gap: 20px;
+    column-gap: 20px;
+    width: 100%px;
+    height: 100%;
+    background: white;
+    padding: 30px 0;
+}
+
+
+.wrapper .sidebar h2 {
+    color: black;
+    text-transform: uppercase;
+    text-align: start;
+
+}
+
+.wrapper .sidebar ul li {
+    padding: 15px;
+    position: relative;
+
+}
+
+.wrapper .bannermama {
+    background-image: linear-gradient(to right, #CBC3E3, #FFC0CB);
+    width: 1000px;
+    text-align: center;
+    display: flex;
+    position: absolute;
+    align-self: center
+}
+
+.wrapper .bannermama h2 {
+    margin-left: 300px;
+    margin-top: 20px;
+}
+
+.wrapper .bannermama p {
+    font-size: 30px;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+    color: white;
+    font-weight: bold;
+    position: absolute;
+    text-align: center;
+    margin-top: 120px;
+}
+
+.wrapper .bannermama .imagenes {
+    display: flex;
+}
+
+.wrapper .bannermama .imagenes .png {
+    margin-right: auto;
+}
+
+.wrapper .bannermama .imagenes .nick {
+    margin-left: 88.4%;
+}
+
+.promociones {
+    position: absolute;
+    display: grid;
+    grid-template-rows: 2fr 5fr 5fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    background-color: white;
+    margin-top: 400px;
+    margin-left: 230px;
+    font-family: sans-serif;
+}
+
+.titulo-destacado {
+    text-align: start;
+}
+
+.converse {
+    color: white;
+    text-align: center;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 1;
+    margin-right: 70px;
+    background: red;
+}
+
+.mk {
+    color: white;
+    text-align: center;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    grid-column-start: 2;
+    grid-column-end: 2;
+    margin-right: 70px;
+    background-color: red;
+}
+
+.sparx {
+    color: white;
+    text-align: center;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    grid-column-start: 3;
+    grid-column-end: 3;
+    margin-right: 70px;
+    background-color: red;
+}
+
+.elite {
+    margin-top: 70px;
+    width: 300px;
+    height: 250px;
+    color: white;
+    text-align: center;
+    grid-row-start: 3;
+    grid-row-end: 3;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    background-color: red;
+}
+
+.nike {
+    width: 300px;
+    height: 250px;
+    color: white;
+    text-align: center;
+    grid-row-start: 3;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 1;
+    margin-top: 70px;
+    background-color: red;
+}
+
+.estilos {
+    position: absolute;
+    display: grid;
+    grid-template-rows: 2fr 5fr 5fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    background-color: white;
+    margin-top: 1300px;
+    margin-left: 230px;
+    font-family: sans-serif;
+}
+
+.titulo-estilos {
+    text-align: start
+}
+
+.tacones {
+    grid-row-start: 2;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 1;
+    margin-right: 70px;
+}
+
+.sandalias {
+    grid-row-start: 2;
+    grid-row-end: 2;
+    grid-column-start: 2;
+    grid-column-end: 2;
+    margin-right: 70px;
+}
+
+.casuales {
+    grid-row-start: 2;
+    grid-row-end: 2;
+    grid-column-start: 3;
+    grid-column-end: 3;
+    margin-right: 70px;
+}
+
+.deportivos {
+    margin-top: 30px;
+    width: 300px;
+    height: 250px;
+    color: white;
+    text-align: center;
+    grid-row-start: 3;
+    grid-row-end: 3;
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+.eventos {
+    grid-row-start: 3;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 1;
+    margin-top: 30px;
+}
+
+.banner2 p,
+.banner2 a {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.banner2 p {
+    font-size: 2.8em;
+    padding: 10px 0;
+    font-weight: 800;
+}
+
+.banner2 {
+
+    width: 100%;
+    padding: 60px 0;
+    text-align: center;
+    background-image: linear-gradient(#4950FF, #FFB762);
+    color: white;
+}
+
+.marcas a {
+    font-size: 20px;
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: 300;
+    margin-top: 30px;
+}
+
+.marcas a:hover {
+    background-color: red;
+}
+
+
+.footer {
+    display: grid;
+    grid-template-rows: 5fr 50px;
+    grid-template-columns: 5fr 5fr 5fr 5fr 5fr;
+    margin-top: 50px;
+    font-family: sans-serif;
+    background-color: red;
+    color: white;
+}
+
+.descripcion {
+    grid-row-start: 1;
+    grid-row-end: 1;
+    grid-column-start: 1;
+    grid-column-end: 1;
+    margin-top: 30px;
+    margin-left: 30px;
+    font-weight: bold;
+    font-size: large;
+}
+
+.footer-cliente {
+    margin-left: 30px;
+    margin-top: 25px;
+}
+
+.footer-tiendas {
+    margin-left: 30px;
+    margin-top: 25px;
+}
+
+.footer-famox {
+    margin-left: 30px;
+    margin-top: 25px;
+}
+
+.footer-socialmedia {
+    margin-left: 30px;
+    margin-top: 25px;
+    ;
+}
+
+.copyright {
+    background-color: #8F0000;
+    grid-column-start: 1;
+    grid-column-end: 6;
+    text-align: center;
+
+}
+
+.footer li {
+    float: left;
+    display: flex;
+    align-items: center;
+
+}
+
+.footer li a {
+    float: right;
+    display: block;
+
+    color: #f2f2f2;
+
+    padding: 14px 20px;
+    text-decoration: none;
+    font-size: 30px;
+}
+
+.footer li a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.footer a.active {
+    color: white;
+    align-self: flex-start;
+}

@@ -1,0 +1,203 @@
+.header {
+    display: grid;
+    grid-template-rows: 5fr 5fr 5fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+
+    background-color: red;
+    background: red;
+
+    font-family: sans-serif;
+    row-gap: 10px;
+}
+
+.logo {
+    grid-row-start: 2;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 1;
+    text-align: center;
+    color: white;
+
+}
+
+.iconos-compra-cuenta {
+    background-color: red;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    grid-column-start: 5;
+    grid-column-end: 5;
+    align-self: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: end;
+
+}
+
+
+.barra-de-busqueda {
+    grid-row-start: 2;
+    grid-row-end: 2;
+    grid-column-start: 5;
+    grid-column-end: 6;
+    align-self: center;
+
+
+}
+
+#menu {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    list-style-type: none;
+    grid-row-start: 3;
+    grid-row-end: 3;
+    grid-column-start: 2;
+    grid-column-end: 6;
+    list-style-type: none;
+
+    column-gap: 100px;
+}
+
+li {
+    float: left;
+    display: flex;
+    align-items: center;
+
+}
+
+li a {
+    float: right;
+    display: block;
+
+    color: #f2f2f2;
+
+    padding: 14px 20px;
+    text-decoration: none;
+    font-size: 30px;
+}
+
+li a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+#menu a.active {
+    color: white;
+    align-self: flex-start;
+}
+
+.promociones {
+    display: grid;
+    grid-template-rows: 2fr 5fr 5fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    background-color: white;
+    margin-top: 50px;
+    margin-left: 50px;
+    font-family: sans-serif;
+}
+
+.titulo-destacado {
+    text-align: start;
+}
+
+.botas {
+    color: white;
+    text-align: center;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 1;
+    margin-right: 70px;
+    background: red;
+}
+
+.mochila {
+    color: white;
+    text-align: center;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    grid-column-start: 2;
+    grid-column-end: 2;
+    margin-right: 70px;
+    background-color: red;
+}
+
+.corbata {
+    color: white;
+    text-align: center;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    grid-column-start: 3;
+    grid-column-end: 3;
+    margin-right: 70px;
+    background-color: red;
+}
+
+.blazermujer {
+    color: white;
+    text-align: center;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    grid-column-start: 4;
+    grid-column-end: 4;
+    margin-right: 70px;
+    background-color: red;
+}
+
+.reloj {
+    color: white;
+    text-align: center;
+    grid-row-start: 3;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 1;
+    margin-top: 70px;
+    background-color: red;
+}
+
+.footer {
+    display: grid;
+    grid-template-rows: 5fr 50px;
+    grid-template-columns: 5fr 5fr 5fr 5fr 5fr;
+    margin-top: 50px;
+    font-family: sans-serif;
+    background-color: red;
+    color: white;
+}
+
+.descripcion {
+    grid-row-start: 1;
+    grid-row-end: 1;
+    grid-column-start: 1;
+    grid-column-end: 1;
+    margin-top: 30px;
+    margin-left: 30px;
+}
+
+.footer-cliente {
+    margin-left: 30px;
+    margin-top: 45px;
+}
+
+.footer-tiendas {
+    margin-left: 30px;
+    margin-top: 25px;
+}
+
+.footer-famox {
+    margin-left: 30px;
+    margin-top: 25px;
+}
+
+.footer-socialmedia {
+    margin-left: 30px;
+    margin-top: 25px;
+    ;
+}
+
+.copyright {
+    background-color: #8F0000;
+    grid-column-start: 1;
+    grid-column-end: 6;
+    text-align: center;
+}
